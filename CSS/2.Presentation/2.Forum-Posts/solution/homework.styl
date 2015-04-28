@@ -1,0 +1,45 @@
+@import '../to-extend/homework.css'
+
+// Variables
+horrible-pink = #B35EF3
+horrible-light-pink=#D492FE
+horrible-violet=#9215F2
+
+// Mixins
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+background-linear-gradient(startColor, endColor)
+  background-size 100%
+  background-image -webkit-linear-gradient(top, startColor, endColor, endColor, endColor, endColor)
+  background-image -moz-linear-gradient(top, startColor, endColor, endColor, endColor, endColor)
+  background-image -webkit-linear-gradient(top, startColor, endColor, endColor, endColor, endColor)
+
+body
+  background-linear-gradient(horrible-light-pink, horrible-violet)
+
+  &>footer
+    text-align center
+    font-style italic
+
+#tb-password, #tb-username
+    background-color horrible-pink
+
+#btn-register
+  background-color Transparent
+  background-repeat no-repeat
+  cursor pointer
+  overflow hidden
+  color white
+
+nav, article
+  border-radius(10px)
+
+  a
+    text-decoration none
+    color horrible-pink
+
+article
+  color white

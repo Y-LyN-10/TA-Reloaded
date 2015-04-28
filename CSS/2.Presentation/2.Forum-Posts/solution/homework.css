@@ -1,0 +1,36 @@
+@import '../to-extend/homework.css';
+body {
+  background-size: 100%;
+  background-image: -webkit-linear-gradient(top, #d492fe, #9215f2, #9215f2, #9215f2, #9215f2);
+  background-image: -moz-linear-gradient(top, #d492fe, #9215f2, #9215f2, #9215f2, #9215f2);
+  background-image: -webkit-linear-gradient(top, #d492fe, #9215f2, #9215f2, #9215f2, #9215f2);
+}
+body>footer {
+  text-align: center;
+  font-style: italic;
+}
+#tb-password,
+#tb-username {
+  background-color: #b35ef3;
+}
+#btn-register {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  color: #fff;
+}
+nav,
+article {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+nav a,
+article a {
+  text-decoration: none;
+  color: #b35ef3;
+}
+article {
+  color: #fff;
+}
