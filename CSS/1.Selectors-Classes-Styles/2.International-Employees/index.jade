@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title Problem 2 - International Employees
+        link(href='employees.css', rel='stylesheet', type='text/css')
+    body
+        include data/employees.jade
+
+        main
+            table
+                thead
+                    tr: th Contact name
+                        th City
+                        th Country
+                        th Is Promoted
+
+                tbody:  each employee in employees
+                    tr
+                        td #{employee.fullName}
+                        td #{employee.city}
+                        td.country(class=employee.country.toLowerCase()) #{employee.country}
+                        td: input(type='checkbox', checked=(employee.isPromoted ? "checked" : undefined))

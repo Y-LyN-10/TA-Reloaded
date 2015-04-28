@@ -1,0 +1,47 @@
+@import '../libs/reset.styl'
+global-reset()
+
+// Mixins
+flag(image)
+  background-image url('img/' + image)
+  background-repeat no-repeat
+  background-position 5px 5px
+
+main
+  font-family Arial, sans-serif
+  width 600px
+
+table
+  width 100%
+  border 1px solid gray
+  border-collapse collapse
+
+thead > tr > th
+  color white
+  padding-top 10px
+  padding-bottom 10px
+  border-bottom 1px solid gray
+  background-color #58BB06
+
+th, td
+  padding 5px
+  border-right 1px solid gray
+  min-width 27%
+
+tr:nth-child(even)
+  background-color #ECECD8
+
+tr > td
+  padding 10px 5px 10px 5px
+
+.country
+  padding-left: 60px
+
+  &.mexico
+    flag('Mexico.gif')
+
+  &.uk
+    flag('UK.gif')
+
+  &.germany
+    flag('Germany.gif')

@@ -1,0 +1,54 @@
+@import '../libs/reset.styl'
+global-reset()
+
+// Let's try a different style of writing styles using stylus xD
+body
+  background-color #A9A9A9
+  font-family Times New Roman
+  margin 0 auto
+  width 900px
+
+  h1
+    color #FAFAD2
+    font-weight bold
+
+  &>header, &>footer
+    margin 20px
+    text-align center
+
+    &>h1
+      font-size 2.5em
+
+    &>nav
+      font-size 1.4em
+
+      &>ul li
+        margin 5px
+
+      a
+        color white
+        text-decoration none
+        font-weight bold
+
+        &:hover
+          text-decoration underline
+
+        &.current
+          background-color #D3D3D3
+
+  &>section
+    text-align left
+
+    &>article, &>article>p
+      margin-top 20px
+      margin-bottom 20px
+
+      &>header>h1
+        font-size 1.7em
+
+      &>footer
+        font-size 0.8em
+
+        a
+          text-decoration none
+          color black

@@ -1,0 +1,145 @@
+ {
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+main {
+  font-family: Arial, sans-serif;
+  width: 600px;
+}
+table {
+  width: 100%;
+  border: 1px solid #808080;
+  border-collapse: collapse;
+}
+thead > tr > th {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #808080;
+  background-color: #58bb06;
+}
+th,
+td {
+  padding: 5px;
+  border-right: 1px solid #808080;
+  min-width: 27%;
+}
+tr:nth-child(even) {
+  background-color: #ececd8;
+}
+tr > td {
+  padding: 10px 5px 10px 5px;
+}
+.country {
+  padding-left: 60px;
+}
+.country.mexico {
+  background-image: url("img/Mexico.gif");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.country.uk {
+  background-image: url("img/UK.gif");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.country.germany {
+  background-image: url("img/Germany.gif");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}

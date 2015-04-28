@@ -1,0 +1,161 @@
+ {
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  background-color: #a9a9a9;
+  font-family: Times New Roman;
+  margin: 0 auto;
+  width: 900px;
+}
+body h1 {
+  color: #fafad2;
+  font-weight: bold;
+}
+body>header,
+body>footer {
+  margin: 20px;
+  text-align: center;
+}
+body>header>h1,
+body>footer>h1 {
+  font-size: 2.5em;
+}
+body>header>nav,
+body>footer>nav {
+  font-size: 1.4em;
+}
+body>header>nav>ul li,
+body>footer>nav>ul li {
+  margin: 5px;
+}
+body>header>nav a,
+body>footer>nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+body>header>nav a:hover,
+body>footer>nav a:hover {
+  text-decoration: underline;
+}
+body>header>nav a.current,
+body>footer>nav a.current {
+  background-color: #d3d3d3;
+}
+body>section {
+  text-align: left;
+}
+body>section>article,
+body>section>article>p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body>section>article>header>h1,
+body>section>article>p>header>h1 {
+  font-size: 1.7em;
+}
+body>section>article>footer,
+body>section>article>p>footer {
+  font-size: 0.8em;
+}
+body>section>article>footer a,
+body>section>article>p>footer a {
+  text-decoration: none;
+  color: #000;
+}
