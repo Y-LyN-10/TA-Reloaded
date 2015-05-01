@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem 4 - Windows Calculator</title>
+    <link href="win-calculator.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section class="calculator">
+      <ul class="main-menu inline">
+        <li><span class="keyboard-shortcut">V</span>iew</li>
+        <li><span class="keyboard-shortcut">E</span>dit</li>
+        <li><span class="keyboard-shortcut">H</span>elp</li>
+      </ul>
+      <form class="display box">
+        <input type="text" value="8854455" class="input-big input-block input-transparent code">
+      </form>
+      <div class="binary-representation box box-inset code">
+        <ul class="inline">
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+          <li>0000</li>
+        </ul>
+        <ul class="inline binary-index muted">
+          <li>63</li>
+          <li>47</li>
+          <li>32</li>
+        </ul>
+        <ul class="inline">
+          <li>0000</li>
+          <li>0000</li>
+          <li>1000</li>
+          <li>0111</li>
+          <li>0001</li>
+          <li>1011</li>
+          <li>1011</li>
+          <li>0111</li>
+        </ul>
+        <ul class="inline binary-index muted">
+          <li>31</li>
+          <li>15</li>
+          <li>0</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="span2">
+          <form class="row3 box">
+            <ul class="unstyled">
+              <li>
+                <label>
+                  <input type="radio" name="numeralSystem" value="hex">Hex
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="numeralSystem" value="dec" checked="">Dec
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="numeralSystem" value="oct">Oct
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="numeralSystem" value="bin">Bin
+                </label>
+              </li>
+            </ul>
+          </form>
+          <form class="row3 box">
+            <ul class="unstyled">
+              <li>
+                <label>
+                  <input type="radio" name="wordSize" value="qword" checked="">Qword
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="wordSize" value="dword">Dword
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="wordSize" value="word">Word
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="wordSize" value="byte">Byte
+                </label>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <form class="span8">
+          <div class="row">
+            <button class="span1 btn btn-muted">&nbsp;</button>
+            <button class="span1 btn">Mod</button>
+            <button disabled="" class="span1 btn">A</button>
+            <button class="span1 btn btn-muted">MC</button>
+            <button class="span1 btn btn-muted">MR</button>
+            <button class="span1 btn btn-muted">MS</button>
+            <button class="span1 btn btn-muted">M+</button>
+            <button class="span1 btn btn-muted">M-</button>
+          </div>
+          <div class="row">
+            <button class="span1 btn">(</button>
+            <button class="span1 btn">)</button>
+            <button disabled="" class="span1 btn">B</button>
+            <button class="span1 btn">&larr;</button>
+            <button class="span1 btn">CE</button>
+            <button class="span1 btn">C</button>
+            <button class="span1 btn">&pm;</button>
+            <button disabled="" class="span1 btn">&Sqrt;</button>
+          </div>
+          <div class="row">
+            <button class="span1 btn">RoL</button>
+            <button class="span1 btn">RoR</button>
+            <button disabled="" class="span1 btn">C</button>
+            <button class="span1 btn btn-loud">7</button>
+            <button class="span1 btn btn-loud">8</button>
+            <button class="span1 btn btn-loud">9</button>
+            <button class="span1 btn">/</button>
+            <button disabled="" class="span1 btn">%</button>
+          </div>
+          <div class="row">
+            <button class="span1 btn">Or</button>
+            <button class="span1 btn">Xor</button>
+            <button disabled="" class="span1 btn">D</button>
+            <button class="span1 btn btn-loud">4</button>
+            <button class="span1 btn btn-loud">5</button>
+            <button class="span1 btn btn-loud">6</button>
+            <button class="span1 btn">*</button>
+            <button disabled="" class="span1 btn">1/x</button>
+          </div>
+          <div class="row">
+            <div class="span7">
+              <div class="row">
+                <button class="span1 btn">Lsh</button>
+                <button class="span1 btn">Rsh</button>
+                <button disabled="" class="span1 btn">E</button>
+                <button class="span1 btn btn-loud">1</button>
+                <button class="span1 btn btn-loud">2</button>
+                <button class="span1 btn btn-loud">3</button>
+                <button class="span1 btn">-</button>
+              </div>
+              <div class="row">
+                <button class="span1 btn">Not</button>
+                <button class="span1 btn">And</button>
+                <button disabled="" class="span1 btn">F</button>
+                <button class="span2 btn btn-loud">0</button>
+                <button disabled="" class="span1 btn">.</button>
+                <button class="span1 btn">+</button>
+              </div>
+            </div>
+            <button class="span1 row2 btn">
+              <div class="evaluate">=</div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

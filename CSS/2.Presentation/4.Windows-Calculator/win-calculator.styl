@@ -1,0 +1,174 @@
+@import '../../libs/reset.styl'
+global-reset()
+
+// Mixins
+background-linear-gradient(args)
+  background -webkit-linear-gradient(args)
+  background    -moz-linear-gradient(args)
+  background      -o-linear-gradient(args)
+  background         linear-gradient(args)
+
+ul, li, button, input
+  margin 0
+  padding 0
+
+body, button, input
+  color #333
+  font 12px Segoe UI, sans-serif
+
+label, button:not(:disabled)
+  cursor pointer
+
+input[type="radio"]
+  vertical-align top
+
+//.unstyled
+//  list-style: none
+
+.inline
+  overflow: hidden
+
+.inline li
+  float left
+  list-style none
+
+.keyboard-shortcut
+  text-decoration underline
+
+.no-underline
+  text-decoration none
+
+.code
+  font-family Consolas, monospace
+
+.muted
+  color #666
+.input-block
+  width 100%
+.input-big
+  font-size 24px
+
+.input-transparent
+  outline 0
+  border none
+  background none
+
+.row
+  margin-left: -5px
+
+.row::after
+  display table
+  clear both
+  content " "
+
+[class ^= "span"], [class *= " span"]
+  float left
+  margin-left 5px
+
+/* Not used:
+span3: 115px,
+span4: 155px,
+span5: 195px,
+span6: 235px */
+.span1
+  width 35px
+.span2
+  width 75px
+.span7
+  width 275px
+.span8
+  width: 315px
+/* span9: 345px */
+
+.calculator
+  width 395px
+  /* span10 */
+
+.calculator
+  margin 0 auto
+  padding 0 10px 5px
+  border 1px solid #999
+  background-linear-gradient(#F0F0F0 0px, #D9E4F1 100px)
+
+.calculator .unstyled
+  padding 3px 0 0
+
+.calculator .unstyled li + li
+  margin-top 6px
+
+.calculator .row3
+  height: 79px
+
+.calculator .box, .calculator .btn
+  margin-bottom 5px
+  border 1px solid #727F8D
+  border-radius 3px
+  color #1C3759
+
+.calculator .box
+  padding 5px
+
+.calculator .box-inset, .calculator .btn:not(:hover):not(:disabled):not(.btn-muted)
+  box-shadow inset 0 0 0 1px #fff
+
+.calculator .main-menu
+  margin 0 -10px 10px
+  padding 1px 5px 2px
+  border-bottom 1px solid #B6BCCC
+  background-linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%)
+
+.calculator .main-menu li + li
+  margin-left 10px
+
+.calculator .display
+  padding 15px 5px 5px
+  background-linear-gradient(#E6EFFB, #FFFFFF)
+
+// TODO: Do something - this looks ugly
+.calculator .display input
+  text-align right
+
+.calculator .binary-representation
+  font-size 14px
+
+.calculator .binary-representation li
+  width 33px
+
+.calculator .binary-representation li + li
+  margin-left: 17px
+
+.calculator .binary-index li:first-child
+  width 183px
+
+.calculator .binary-index li:last-child
+  width 131px
+  text-align right
+
+.calculator .btn
+  position relative
+  height 27px
+  border 1px solid #8797AA
+  background-linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%)
+  line-height 25px /* Button box model - without borders */
+
+.calculator .btn-loud
+  background-linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%)
+  font-size 15px
+
+.calculator .btn-muted
+  background #D9E4F1
+
+.calculator .btn:hover, .calculator .btn:focus
+  border-color #F5D50F
+  background-linear-gradient(#FEF5EB 0%, #FCE3C6 49%, #FBD075 50%, #FCF8CA 100%)
+
+.calculator .btn:not(:disabled):active
+  top 1px
+.calculator .btn:disabled
+  border-color #B4C2D1
+  background #D9E4F1
+
+.calculator .btn.row2
+  height 59px
+.calculator .btn strong
+  font-size 22px

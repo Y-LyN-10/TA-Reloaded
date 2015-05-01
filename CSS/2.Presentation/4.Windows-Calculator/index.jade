@@ -1,0 +1,141 @@
+// Based on jasssonpet's solution
+
+doctype html
+html
+    head
+        title Problem 4 - Windows Calculator
+        link(href='win-calculator.css', rel='stylesheet', type='text/css')
+    body
+        section.calculator
+            ul.main-menu.inline
+                li
+                    span.keyboard-shortcut V
+                    | iew
+                li
+                    span.keyboard-shortcut E
+                    | dit
+                li
+                    span.keyboard-shortcut H
+                    | elp
+
+            form.display.box
+                input.input-big.input-block.input-transparent.code(type='text', value='8854455')
+
+            .binary-representation.box.box-inset.code
+                ul.inline
+                    - var n = 0
+                    while n < 8
+                        li 0000
+                        n++
+
+                ul.inline.binary-index.muted
+                    li 63
+                    li 47
+                    li 32
+
+                ul.inline
+                - var binaryNums = ['0000', '0000', '1000', '0111', '0001', '1011', '1011', '0111'];
+                    each val in binaryNums
+                        li= val
+
+                ul.inline.binary-index.muted
+                    li 31
+                    li 15
+                    li 0
+
+            .row
+                .span2
+                    form.row3.box
+                        ul.unstyled
+                            // TODO: re-write with jade loops
+                            li: label
+                                    input(type='radio', name='numeralSystem', value='hex')
+                                    | Hex
+                            li: label
+                                    input(type='radio', name='numeralSystem', value='dec', checked='')
+                                    | Dec
+                            li: label
+                                    input(type='radio', name='numeralSystem', value='oct')
+                                    | Oct
+                            li: label
+                                    input(type='radio', name='numeralSystem', value='bin')
+                                    | Bin
+
+                    form.row3.box
+                        ul.unstyled
+                            // TODO: re-write with jade loops
+                            li: label
+                                    input(type='radio', name='wordSize', value='qword', checked='')
+                                    | Qword
+                            li: label
+                                    input(type='radio', name='wordSize', value='dword')
+                                    | Dword
+                            li: label
+                                    input(type='radio', name='wordSize', value='word')
+                                    | Word
+                            li: label
+                                    input(type='radio', name='wordSize', value='byte')
+                                    | Byte
+
+                form.span8
+                    // TODO: re-write with jade loops
+                    .row
+                        button.span1.btn.btn-muted &nbsp;
+                        button.span1.btn Mod
+                        button.span1.btn(disabled='') A
+                        button.span1.btn.btn-muted MC
+                        button.span1.btn.btn-muted MR
+                        button.span1.btn.btn-muted MS
+                        button.span1.btn.btn-muted M+
+                        button.span1.btn.btn-muted M-
+
+                    .row
+                        button.span1.btn (
+                        button.span1.btn )
+                        button.span1.btn(disabled='') B
+                        button.span1.btn &larr;
+                        button.span1.btn CE
+                        button.span1.btn C
+                        button.span1.btn &pm;
+                        button.span1.btn(disabled='') &Sqrt;
+
+                    .row
+                        button.span1.btn RoL
+                        button.span1.btn RoR
+                        button.span1.btn(disabled='') C
+                        button.span1.btn.btn-loud 7
+                        button.span1.btn.btn-loud 8
+                        button.span1.btn.btn-loud 9
+                        button.span1.btn /
+                        button.span1.btn(disabled='') %
+
+                    .row
+                        button.span1.btn Or
+                        button.span1.btn Xor
+                        button.span1.btn(disabled='') D
+                        button.span1.btn.btn-loud 4
+                        button.span1.btn.btn-loud 5
+                        button.span1.btn.btn-loud 6
+                        button.span1.btn *
+                        button.span1.btn(disabled='') 1/x
+
+                    .row
+                        .span7
+                            .row
+                                button.span1.btn Lsh
+                                button.span1.btn Rsh
+                                button.span1.btn(disabled='') E
+                                button.span1.btn.btn-loud 1
+                                button.span1.btn.btn-loud 2
+                                button.span1.btn.btn-loud 3
+                                button.span1.btn -
+
+                            .row
+                                button.span1.btn Not
+                                button.span1.btn And
+                                button.span1.btn(disabled='') F
+                                button.span2.btn.btn-loud 0
+                                button.span1.btn(disabled='') .
+                                button.span1.btn +
+
+                        button.span1.row2.btn: .evaluate =
