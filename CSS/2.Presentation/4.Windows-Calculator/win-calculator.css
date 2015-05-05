@@ -186,10 +186,10 @@ span6: 235px */
   margin: 0 auto;
   padding: 0 10px 5px;
   border: 1px solid #999;
-  background: -webkit-linear-gradient(#f0f0f0 0px);
-  background: -moz-linear-gradient(#f0f0f0 0px);
-  background: -o-linear-gradient(#f0f0f0 0px);
-  background: linear-gradient(#f0f0f0 0px);
+  background: -webkit-linear-gradient(#f0f0f0 0px, #d9e4f1 100px, #d9e4f1 100px, #d9e4f1 100px);
+  background: -moz-linear-gradient(#f0f0f0 0px, #d9e4f1 100px, #d9e4f1 100px, #d9e4f1 100px);
+  background: -o-linear-gradient(#f0f0f0 0px, #d9e4f1 100px, #d9e4f1 100px, #d9e4f1 100px);
+  background: linear-gradient(#f0f0f0 0px, #d9e4f1 100px, #d9e4f1 100px, #d9e4f1 100px);
 }
 .calculator .unstyled {
   padding: 3px 0 0;
@@ -217,21 +217,21 @@ span6: 235px */
 .calculator .main-menu {
   margin: 0 -10px 10px;
   padding: 1px 5px 2px;
-  border-bottom: 1px solid #b6bccc;
-  background: -webkit-linear-gradient(#fefeff 0%);
-  background: -moz-linear-gradient(#fefeff 0%);
-  background: -o-linear-gradient(#fefeff 0%);
-  background: linear-gradient(#fefeff 0%);
+  border-bottom: 1px solid #999;
+  background: -webkit-linear-gradient(#f0f0f0 0%, #e5eaf5 34%, #d4dbed 35%, #f0f0f0 100%);
+  background: -moz-linear-gradient(#f0f0f0 0%, #e5eaf5 34%, #d4dbed 35%, #f0f0f0 100%);
+  background: -o-linear-gradient(#f0f0f0 0%, #e5eaf5 34%, #d4dbed 35%, #f0f0f0 100%);
+  background: linear-gradient(#f0f0f0 0%, #e5eaf5 34%, #d4dbed 35%, #f0f0f0 100%);
 }
 .calculator .main-menu li + li {
   margin-left: 10px;
 }
 .calculator .display {
   padding: 15px 5px 5px;
-  background: -webkit-linear-gradient(#e6effb);
-  background: -moz-linear-gradient(#e6effb);
-  background: -o-linear-gradient(#e6effb);
-  background: linear-gradient(#e6effb);
+  background: -webkit-linear-gradient(#e6effb, #fff, #fff, #fff);
+  background: -moz-linear-gradient(#e6effb, #fff, #fff, #fff);
+  background: -o-linear-gradient(#e6effb, #fff, #fff, #fff);
+  background: linear-gradient(#e6effb, #fff, #fff, #fff);
 }
 .calculator .display input {
   text-align: right;
@@ -256,17 +256,17 @@ span6: 235px */
   position: relative;
   height: 27px;
   border: 1px solid #8797aa;
-  background: -webkit-linear-gradient(#f0f6fb 0%);
-  background: -moz-linear-gradient(#f0f6fb 0%);
-  background: -o-linear-gradient(#f0f6fb 0%);
-  background: linear-gradient(#f0f6fb 0%);
+  background: -webkit-linear-gradient(#f0f6fb 0%, #e2eaf3 49%, #d5e0ed 50%, #d7e2ef 100%);
+  background: -moz-linear-gradient(#f0f6fb 0%, #e2eaf3 49%, #d5e0ed 50%, #d7e2ef 100%);
+  background: -o-linear-gradient(#f0f6fb 0%, #e2eaf3 49%, #d5e0ed 50%, #d7e2ef 100%);
+  background: linear-gradient(#f0f6fb 0%, #e2eaf3 49%, #d5e0ed 50%, #d7e2ef 100%);
   line-height: 25px;
 }
 .calculator .btn-loud {
-  background: -webkit-linear-gradient(#f7fbff 0%);
-  background: -moz-linear-gradient(#f7fbff 0%);
-  background: -o-linear-gradient(#f7fbff 0%);
-  background: linear-gradient(#f7fbff 0%);
+  background: -webkit-linear-gradient(#f7fbff 0%, #edf3f8 49%, #e7edf5 50%, #f3fbff 100%);
+  background: -moz-linear-gradient(#f7fbff 0%, #edf3f8 49%, #e7edf5 50%, #f3fbff 100%);
+  background: -o-linear-gradient(#f7fbff 0%, #edf3f8 49%, #e7edf5 50%, #f3fbff 100%);
+  background: linear-gradient(#f7fbff 0%, #edf3f8 49%, #e7edf5 50%, #f3fbff 100%);
   font-size: 15px;
 }
 .calculator .btn-muted {
@@ -275,10 +275,10 @@ span6: 235px */
 .calculator .btn:hover,
 .calculator .btn:focus {
   border-color: #f5d50f;
-  background: -webkit-linear-gradient(#fef5eb 0%);
-  background: -moz-linear-gradient(#fef5eb 0%);
-  background: -o-linear-gradient(#fef5eb 0%);
-  background: linear-gradient(#fef5eb 0%);
+  background: -webkit-linear-gradient(#fef5eb 0%, #fce3c6 49%, #fbd075 50%, #fcf8ca 100%);
+  background: -moz-linear-gradient(#fef5eb 0%, #fce3c6 49%, #fbd075 50%, #fcf8ca 100%);
+  background: -o-linear-gradient(#fef5eb 0%, #fce3c6 49%, #fbd075 50%, #fcf8ca 100%);
+  background: linear-gradient(#fef5eb 0%, #fce3c6 49%, #fbd075 50%, #fcf8ca 100%);
 }
 .calculator .btn:not(:disabled):active {
   top: 1px;

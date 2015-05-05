@@ -1,12 +1,22 @@
 @import '../../libs/reset.styl'
 global-reset()
 
-// Mixins
-background-linear-gradient(args)
-  background -webkit-linear-gradient(args)
-  background    -moz-linear-gradient(args)
-  background      -o-linear-gradient(args)
-  background         linear-gradient(args)
+// For best look, open this in chrome/chromium
+
+// Variables - override default colors and add new ones
+grey = #666
+lightgrey = #999
+nearlywhite = #F0F0F0
+coldwhite = #D9E4F1
+lightdirtyblue =  #727F8D
+darkdirtyblue = #1C3759
+
+// Mixins - 3 or 4 colors are optional
+background-linear-gradient(c1, c2, c3=c2, c4=c2)
+  background -webkit-linear-gradient(c1, c2, c3, c4)
+  background    -moz-linear-gradient(c1, c2, c3, c4)
+  background      -o-linear-gradient(c1, c2, c3, c4)
+  background         linear-gradient(c1, c2, c3, c4)
 
 ul, li, button, input
   margin 0
@@ -21,9 +31,6 @@ label, button:not(:disabled)
 
 input[type="radio"]
   vertical-align top
-
-//.unstyled
-//  list-style: none
 
 .inline
   overflow: hidden
@@ -42,7 +49,7 @@ input[type="radio"]
   font-family Consolas, monospace
 
 .muted
-  color #666
+  color grey
 .input-block
   width 100%
 .input-big
@@ -87,8 +94,8 @@ span6: 235px */
 .calculator
   margin 0 auto
   padding 0 10px 5px
-  border 1px solid #999
-  background-linear-gradient(#F0F0F0 0px, #D9E4F1 100px)
+  border 1px solid lightgrey
+  background-linear-gradient(nearlywhite 0px, coldwhite 100px)
 
 .calculator .unstyled
   padding 3px 0 0
@@ -101,28 +108,29 @@ span6: 235px */
 
 .calculator .box, .calculator .btn
   margin-bottom 5px
-  border 1px solid #727F8D
+  border 1px solid lightdirtyblue
   border-radius 3px
-  color #1C3759
+  color darkdirtyblue
 
 .calculator .box
   padding 5px
 
 .calculator .box-inset, .calculator .btn:not(:hover):not(:disabled):not(.btn-muted)
-  box-shadow inset 0 0 0 1px #fff
+  box-shadow inset 0 0 0 1px white
 
 .calculator .main-menu
   margin 0 -10px 10px
   padding 1px 5px 2px
-  border-bottom 1px solid #B6BCCC
-  background-linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%)
+  border-bottom 1px solid lightgrey
+  // Yh... 100 shades of white
+  background-linear-gradient(nearlywhite 0%, #E5EAF5 34%, #D4DBED 35%, nearlywhite 100%)
 
 .calculator .main-menu li + li
   margin-left 10px
 
 .calculator .display
   padding 15px 5px 5px
-  background-linear-gradient(#E6EFFB, #FFFFFF)
+  background-linear-gradient(#E6EFFB, white)
 
 // TODO: Do something - this looks ugly
 .calculator .display input
@@ -149,7 +157,7 @@ span6: 235px */
   height 27px
   border 1px solid #8797AA
   background-linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%)
-  line-height 25px /* Button box model - without borders */
+  line-height 25px
 
 .calculator .btn-loud
   background-linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%)
