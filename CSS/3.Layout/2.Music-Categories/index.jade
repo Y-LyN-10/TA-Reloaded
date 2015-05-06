@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title Problem 2 - Music Categories
+        link(href='music-categories.css', rel='stylesheet', type='text/css')
+    body
+        include data/music-categories.jade
+
+        section
+            header Music Categories
+
+            each category in categories
+                article.box
+                   img(src="images/#{category.image}", alt='Template')
+                   p #{category.textContent}
+                     a(href='#') #{category.urlText}
+
+                   .buttons
+                        button.listen Listen
+                        button.add Add

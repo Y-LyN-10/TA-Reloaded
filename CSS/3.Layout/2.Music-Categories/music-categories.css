@@ -1,0 +1,149 @@
+ {
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body section {
+  width: 450px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Sans-serif;
+}
+body section header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+body section article.box {
+  min-height: 86px;
+  position: relative;
+  background-color: #fff;
+  border: 1 px solid #000;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 15px;
+  padding-right: 25px;
+  overflow: hidden;
+  text-wrap: word-wrap avoid;
+}
+body section article.box img {
+  float: left;
+  margin-right: 15px;
+}
+body section article.box p {
+  margin-bottom: 50px;
+}
+body section article.box p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+body section article.box .buttons {
+  float: right;
+  position: absolute;
+  display: block;
+  bottom: 15px;
+  right: 15px;
+}
+body section article.box .buttons .add,
+body section article.box .buttons .listen {
+  background-color: #8b0000;
+  padding: 5px;
+  min-width: 80px;
+}

@@ -1,0 +1,54 @@
+@import '../../libs/reset.styl'
+global-reset()
+
+body
+  //background-color black
+
+  section
+    width 450px
+    background-color #EEE
+    padding 10px
+    border-radius 10px
+    font-family Sans-serif
+
+    header
+      margin-top 5px
+      margin-bottom 5px
+      font-size 18px
+
+    article.box
+      min-height 86px
+      position relative
+      background-color #FFF
+      border 1 px solid #000
+      display block
+      margin-top 50px
+      margin-bottom 25px
+      padding 15px
+      padding-right 25px
+      overflow hidden
+      text-wrap word-wrap avoid
+
+      img
+        float left
+        margin-right 15px
+
+      p
+        margin-bottom 50px
+
+      p a
+        text-decoration none
+        color black
+        font-weight bold
+
+      .buttons
+        float right
+        position absolute
+        display block
+        bottom 15px
+        right 15px
+
+        .add, .listen
+          background-color darkred
+          padding 5px
+          min-width 80px
