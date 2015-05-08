@@ -97,53 +97,64 @@ td {
 a img {
   border: none;
 }
-body section {
-  width: 450px;
+section {
+  width: 435px;
   background-color: #eee;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   font-family: Sans-serif;
 }
-body section header {
+section header {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
 }
-body section article.box {
-  min-height: 86px;
+section article.box {
+  overflow: hidden;
   position: relative;
   background-color: #fff;
-  border: 1 px solid #000;
+  border: 1px solid #000;
   display: block;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 25px;
   padding: 15px;
-  padding-right: 25px;
-  overflow: hidden;
+  padding-right: 20px;
   text-wrap: word-wrap avoid;
 }
-body section article.box img {
+section article.box img {
   float: left;
   margin-right: 15px;
-}
-body section article.box p {
-  margin-bottom: 50px;
-}
-body section article.box p a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-body section article.box .buttons {
-  float: right;
-  position: absolute;
   display: block;
-  bottom: 15px;
-  right: 15px;
+  border: 1px solid #000;
 }
-body section article.box .buttons .add,
-body section article.box .buttons .listen {
-  background-color: #8b0000;
+section article.box p {
+  width: 96%;
+  font-size: 14px;
+  line-height: 16px;
+}
+section article.box p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+section article.box .buttons {
+  float: right;
+  position: relative;
+  display: block;
+  margin-top: 15px;
+}
+section article.box .buttons .add,
+section article.box .buttons .listen {
+  background: -webkit-linear-gradient(left, #8a0000 0%, #8a0000 22%, #d10000 0%, #d10000 100%);
+  background: -moz-linear-gradient(right, #8a0000 0%, #8a0000 22%, #d10000 0%, #d10000 100%);
+  background: -o-linear-gradient(right, #8a0000 0%, #8a0000 22%, #d10000 0%, #d10000 100%);
+  background: linear-gradient(right, #8a0000 0%, #8a0000 22%, #d10000 0%, #d10000 100%);
+  border-top: 3px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  border-right: 3px solid rgba(0,0,0,0.5);
+  color: #fff;
   padding: 5px;
+  padding-left: 10px;
   min-width: 80px;
 }

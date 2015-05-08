@@ -1,54 +1,65 @@
 @import '../../libs/reset.styl'
 global-reset()
 
-body
-  //background-color black
+button-linear-gradient(c1, c2, c3, c4)
+  background -webkit-linear-gradient(left,  c1, c2, c3, c4)
+  background    -moz-linear-gradient(right, c1, c2, c3, c4)
+  background      -o-linear-gradient(right, c1, c2, c3, c4)
+  background         linear-gradient(right, c1, c2, c3, c4)
 
-  section
-    width 450px
-    background-color #EEE
-    padding 10px
-    border-radius 10px
-    font-family Sans-serif
+section
+  width 435px
+  background-color #EEE
+  padding 15px
+  border-radius 10px
+  font-family Sans-serif
 
-    header
-      margin-top 5px
-      margin-bottom 5px
-      font-size 18px
+  header
+    margin-top 5px
+    margin-bottom 5px
+    font-size 18px
 
-    article.box
-      min-height 86px
-      position relative
-      background-color #FFF
-      border 1 px solid #000
+  article.box
+    overflow hidden
+    position relative
+    background-color #FFF
+    border 1px solid #000
+    display block
+    margin-top 45px
+    margin-bottom 25px
+    padding 15px
+    padding-right 20px
+    text-wrap word-wrap avoid
+
+    img
+      float left
+      margin-right 15px
       display block
-      margin-top 50px
-      margin-bottom 25px
-      padding 15px
-      padding-right 25px
-      overflow hidden
-      text-wrap word-wrap avoid
+      border 1px solid black
 
-      img
-        float left
-        margin-right 15px
+    p
+      width 96%
+      font-size 14px
+      line-height 16px
 
-      p
-        margin-bottom 50px
+    p a
+      text-decoration none
+      font-weight bold
+      color black
 
-      p a
-        text-decoration none
-        color black
-        font-weight bold
+    .buttons
+      float right
+      position relative
+      display block
+      margin-top 15px
 
-      .buttons
-        float right
-        position absolute
-        display block
-        bottom 15px
-        right 15px
-
-        .add, .listen
-          background-color darkred
-          padding 5px
-          min-width 80px
+      .add, .listen
+        button-linear-gradient(#8A0000 0%, #8A0000 22%, #D10000 0%, #D10000 100%)
+        border-top 3px solid rgba(white, .5)
+        border-left 1px solid rgba(white, .5)
+        border-bottom 3px solid rgba(black, .5)
+        border-right 3px solid rgba(black, .5)
+        color white
+        padding 5px
+        padding-left 10px
+        min-width 80px
