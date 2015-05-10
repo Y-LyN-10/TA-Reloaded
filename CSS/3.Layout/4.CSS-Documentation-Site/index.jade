@@ -1,0 +1,121 @@
+doctype html
+html
+    head
+        title Index
+        link(href='css.css', rel='stylesheet', type='text/css')
+    body
+
+        -var cssBasic = ['Introduction', 'Syntax', 'How To', 'Background', 'Text', 'Font', 'Border', 'Outline', 'Margin', 'Padding', 'List', 'Table']
+
+        -var cssAdvanced = ['Dimension', 'Classification', 'Positioning', 'Pseudo-class', 'Pseudo-element', 'Image Gallery', 'Image Opacity', 'Media Types', 'Don\'t', 'Summary']
+
+        -var references = ['CSS2 Rference', 'CSS2 Print', 'CSS2 Aural', 'CSS Units', 'CSS Colors', 'CSS Colorvalues', 'CSS Colornames']
+
+        main
+            aside
+                nav
+                    img(src='images/home-icon.png', alt='home')
+                    header Home
+
+                    ul
+                        li CSS Basic
+                        each category in cssBasic
+                            li: a(href='#') CSS #{category}
+
+
+                    ul
+                        li CSS Advanced
+                        each category in cssAdvanced
+                            li: a(href='#') CSS #{category}
+
+                    ul
+                        li CSS Examples
+                        li: a(href='#') CSS Examples
+
+                    ul
+
+                        li References
+                        each reference in references
+                            li: a(href='#') #{reference}
+
+                    ul
+                        li CSS Quiz
+                        li: a(href='#') CSS Quiz
+                        li: a(href='#') CSS Exam
+
+            section
+                header
+                    h1 CSS Tutorial
+                    .nav-buttons
+                        button
+                            span.leftArrow &#x25C4; Previous
+
+                        button Next
+                            span.rightArrow &#x25BA;
+
+                article: h2 CSS Tutorial
+                    img(src='images/logocss.gif', alt='css')
+                    p Save a lot of work with CSS!
+                    p In our CSS tutorial you will learn how to use CSS to control the style and layout of multiple Web pages all at once.
+                    a(href='#') Start learning CSS!
+
+                article: h2 CSS Examples
+                    p Learn by 70 examples! With our editor, you can edit CSS, and click on a test button to view the result.
+                    a(href='#') Try-It-Yourself!
+
+                article: h2 CSS Reference
+                    p At W3Schools you will find a complete CSS2 reference, listing properties, units of measurement, colors, and more.
+                    a(href='#') CSS2 Reference
+
+                article: h2 CSS Quiz Test
+                    p Test your CSS skills at W3Schools!
+                    a(href='#') Start CSS Quiz!
+
+                footer
+                    .nav-buttons
+                        button
+                            span.leftArrow &#x25C4; Previous
+
+                        button Next
+                            span.rightArrow &#x25BA;
+
+            aside
+                .asideBox Site search
+                    form
+                        input(type='search')
+                        input(type='submit', value='...')
+
+                    a(href='#') About W3Schools
+                    a(href='#') W3Schools Forum
+
+                .asideBox
+                    a(href='#')
+                        img(src='images/ad-baner.png', alt='styles')
+                    a(href='#') Dynamic button image generation
+
+                .asideBox Web Hosting
+
+                    a(href='#') $15 Domain Name Registration
+                    a(href='#') Save $20 / year!
+
+                .asideBox
+                    a(href='#') UK Domain Names
+                    a(href='#') UK Web Hosting
+                    a(href='#') Alojamento Web
+
+                .asideBox
+                    a(href='#') Buy UK Domain Names
+                    a(href='#') Register Domain Names
+
+                .asideBox
+                    a(href='#') Cheap Domain Names
+                    a(href='#') Cheap Web Hosting
+
+                .asideBox: a(href='#') Best Web Hosting
+                .asideBox: a(href='#') Domain Name Registration
+                .asideBox: a(href='#') PHP MySQL Hosting
+                .asideBox: a(href='#') Top 10 Web Hostings
+                .asideBox: a(href='#') Web Hosting Providers
+                .asideBox: a(href='#') Web Hosting Company
+                .asideBox: a(href='#') Web Hosting Reviews
+                .asideBox: a(href='#') UK Web Hosting
