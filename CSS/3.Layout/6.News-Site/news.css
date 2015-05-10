@@ -97,3 +97,63 @@ td {
 a img {
   border: none;
 }
+.container {
+  background-color: #1e3741;
+  border-radius: 5px;
+  border: 1px solid #99bec7;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 610px;
+}
+nav {
+  margin-top: 8px;
+}
+nav ul li {
+  float: left;
+  margin-right: 1px;
+  background-color: #4b5f67;
+  padding: 7px 12px 7px 12px;
+}
+nav ul li:first-child {
+  background-color: #1e3741;
+}
+nav ul li:first-child a {
+  color: #fff;
+}
+nav ul li a {
+  font-size: 11px;
+  font-weight: bold;
+  color: #93adb7;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+section {
+  display: block;
+  margin-top: 10px;
+}
+section ul {
+  float: left;
+  width: 235px;
+}
+section ul li:first-child {
+  background-color: #00968c;
+  color: #fff;
+  border: none;
+}
+section ul li {
+  display: block;
+  font-size: 12px;
+  color: #9da7a7;
+  font-weight: bold;
+  border-bottom: 1px solid #697980;
+  padding: 10px;
+  line-height: normal;
+  padding-right: 15px;
+}
+section ul li:last-child {
+  border-bottom: none;
+}
+img {
+  margin-bottom: 15px;
+}

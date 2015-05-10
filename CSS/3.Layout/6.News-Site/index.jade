@@ -7,17 +7,19 @@ html
         -var navTabs = ['Новините', 'Спорт', 'Емисии', 'Любопитно', 'Аз, репортерът', 'Тази сутрин']
         -var breakingNews = ['Проливни дъждове в Дания, Китай и Индия, необичайни горещини в Иран', 'Над 200 хектара горят на територията на бивш военен полигон в Германия', '23-ма ранени при сблъсък на два пътнически влака в Полша', 'Диференцират от догодина минималния осигурителен доход за самоосигуряващите се']
 
-        header
-            nav
-                ul
-                    each tab in navTabs
-                        li#navTab
-                            a(href='#') #{tab}
+        main
+            .container
+                nav
+                    ul
+                        each tab in navTabs
+                            li: a(href='#') #{tab}
 
-        section
-            ul
-                li#activeNews Интернет новини 13.07.2010 г.
-                    each title in breakingNews
-                        li #{title}
+                br
+                br
+                section
+                    ul
+                        li#activeNews Интернет новини - 13.07.2010 г.
+                            each title in breakingNews
+                                li #{title}
 
-            img(src="images/news.png" alt="news")
+                    img(src="images/btv.png" alt="news")
