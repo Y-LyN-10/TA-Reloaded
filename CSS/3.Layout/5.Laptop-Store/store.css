@@ -1,99 +1,88 @@
- {
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]),
-[hidden] {
-  display: none;
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
 }
-body {
-  line-height: 1;
-  color: #000;
-  background: #fff;
+.store {
+  display: block;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px 5px 5px 10px;
+  box-shadow: 0 0 5px #000;
+  width: 900px;
+  height: 600px;
+  font-family: Arial, sans-serif;
 }
-ol,
-ul {
+.store header {
+  align-content: center;
+  width: 830px;
+}
+.store header nav {
+  margin-left: 200px;
+}
+.store header nav a {
+  color: #13b4f1;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 2px;
+}
+.store hr {
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #000;
+  width: 100%;
+}
+section {
+  border: 2px solid #000;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+  padding: 5px;
+  width: 545px;
+}
+article {
+  display: inline-block;
+  width: 270px;
+}
+article fieldset {
+  border: 2px solid #000;
+  font-size: 18px;
+}
+article fieldset legend {
+  margin-left: 20px;
+  font-size: 18px;
+}
+img {
+  padding: 5px;
+  width: 150px;
+  position: relative;
+  top: -10px;
+  float: left;
+}
+.info {
+  margin-top: 15px;
+}
+.info:first-of-type {
+  margin-top: 30px;
+}
+.price {
+  display: inline;
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+aside {
+  font-size: 18px;
+  display: inline-block;
+  margin: 50px 5px;
+  width: 300px;
+}
+aside ul li {
+  text-decoration: none;
   list-style: none;
+  font-size: 1.5em;
+  margin: 20px;
 }
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-a img {
-  border: none;
+aside ul li input {
+  display: block;
+  width: 90%;
 }

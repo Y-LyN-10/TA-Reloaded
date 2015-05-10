@@ -1,2 +1,88 @@
-@import '../../libs/reset.styl'
-global-reset()
+// Simple reset (the one that I usually use - clear too much things that I actually need)
+*
+  margin 0
+  padding 0
+
+.store
+  display block
+  padding 10px
+  border 1px solid black
+  border-radius 10px 5px 5px 10px
+  box-shadow 0 0 5px black
+  width 900px
+  height 600px
+  font-family Arial, sans-serif
+
+  header
+    align-content center
+    width 830px
+
+    nav
+      margin-left 200px // Margin for president...
+
+      a
+        color #13b4f1
+        font-size 24px
+        font-weight bold
+        margin 2px
+
+  hr
+    margin-left 20px
+    margin-top 10px
+    border 1px solid black
+    width 100%
+
+section
+  border 2px solid black
+  margin-top 10px
+  margin-right 10px
+  float left
+  padding 5px
+  width 545px
+
+article
+  display inline-block
+  width 270px
+
+  fieldset
+    border 2px solid black
+    font-size 18px
+
+    legend
+      margin-left 20px
+      font-size 18px
+
+img
+  padding 5px
+  width 150px
+  position relative
+  top -10px
+  float left
+
+.info
+  margin-top 15px
+
+.info:first-of-type
+  margin-top 30px
+
+.price
+  display inline
+  position relative
+  left 20px
+  top -20px
+
+aside
+  font-size 18px
+  display inline-block
+  margin 50px 5px // Oh, and fuck proper positioning. I'm already sick of this task
+  width 300px
+
+  ul li
+    text-decoration none
+    list-style none
+    font-size 1.5em
+    margin 20px
+
+    input
+      display block
+      width 90%

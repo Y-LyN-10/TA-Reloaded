@@ -2,14 +2,17 @@ doctype html
 html
     head
         title Index
-        link(href='styles.css', rel='stylesheet', type='text/css')
+        link(href='store.css', rel='stylesheet', type='text/css')
     body
         -var brands = ['Apple', 'Toshiba', 'Lenovo', 'Dell', 'Asus', 'Acer', 'HP']
 
-        header
-            nav
-                each brand in brands
-                    a(href='#') #{brand}
+        .store
+            header
+                nav
+                    each brand in brands
+                        a(href='#') #{brand}
+
+                hr
 
             section
                 // well, while loop is not working in jade now for some reason
@@ -20,9 +23,8 @@ html
                             img(src='images/macbook.png', width='150px', alt='macBook')
                             .info 64 GB SSD
                             .info 2 GB DDR
-                            .info 1300 USD
                             .info Intel Core i5
-
+                            .price 1300 USD
             aside
                 ul
                     li Min price: 500 USD
