@@ -4,27 +4,28 @@ html
         title Index
         link(href='login.css', rel='stylesheet', type='text/css')
     body
-        form
-            fieldset
-                img(src='images/computer-orig.png')
+        main
+            .container
+                form
+                    fieldset
+                        img(src='images/computer-orig.png')
 
-                label(for='name') members login:
-                input#name(type='text', name='name', placeholder='Your name')
+                        label(for='name') members login:
+                            input#name(type='text', name='name', placeholder='Your name')
 
-                input#mail(type='text', name='email' placeholder='E-mail')
-                label(for='email') members login:
+                        label(for='email')
+                            input#mail(type='text', name='email' placeholder='E-mail Id')
 
-                input(type='button', value='go')
+                        input(type='button', value='GO')
 
-        .content
-            h1 about total management?
+                h1 about total management?
 
-            p  Total Management is a free, tableless, W3C-compliant web design layout by Template
-            | World. This template has been tested and proven compatible with all major browser environments and operating systems. You are free to modify the design to suit your tastes in any way you like.
+                .content
+                    p  Total Management is a free, tableless, W3C-compliant web design layout by Template World. This template has been tested and proven compatible with all major browser environments and operating systems. You are free to modify the design to suit your tastes in any way you like.
 
-            p We only ask you to not remove
-                a(href='#')"Design by Template World"
-                |  and the link
-            | http://www.templateworld.com from the footer of the template.
+                    p We only ask you to not remove
+                        a(href='#')"Design by Template World"
+                        |  and the link
+                    p http://www.templateworld.com from the footer of the template.
 
-            p  If you are interested in seeing more of our free web template designs feel free to visit our website, Template World. We intend to add at least 25 new free templates in the coming month.
+                    p  If you are interested in seeing more of our free web template designs feel free to visit our website, Template World. We intend to add at least 25 new free templates in the coming month.

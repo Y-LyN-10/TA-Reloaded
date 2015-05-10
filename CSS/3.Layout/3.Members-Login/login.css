@@ -97,3 +97,65 @@ td {
 a img {
   border: none;
 }
+main {
+  width: 660px;
+  line-height: normal;
+}
+.container {
+  background-color: #3b3b3b;
+  border: 1px solid #806850;
+  border-radius: 10px;
+}
+.container form {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(#3b3b3b 70%, #2f2f2f 95%, #232323 100%);
+  border-radius: 10px;
+}
+.container fieldset {
+  padding: 10px 0 10px 10px;
+}
+img {
+  float: left;
+  position: relative;
+  top: -5px;
+  margin-right: 20px;
+}
+label {
+  color: #fff;
+  vertical-align: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+label input {
+  max-width: 120px;
+  margin: 10px;
+  padding: 3px 10px;
+}
+input[type='button'] {
+  background: url("images/button.gif") no-repeat;
+  vertical-align: 13px;
+  position: relative;
+  left: 10px;
+  width: 58px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+h1 {
+  margin: 15px 10px 10px 10px;
+  font-size: 2em;
+  color: #fdd416;
+}
+.content {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #a5a5a5;
+  padding: 10px;
+  max-width: 610px;
+}
+.content a {
+  text-decoration: none;
+  color: #fff;
+}
