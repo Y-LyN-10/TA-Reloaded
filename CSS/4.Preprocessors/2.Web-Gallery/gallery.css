@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+#wrapper img {
+  border: 2px outset #808080;
+}
+#wrapper div#preview img {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+#wrapper div#preview img:target {
+  display: block;
+}
+#wrapper div#elves {
+  margin: 20px;
+}
+#wrapper div#elves a {
+  margin: 0 10px;
+}
+#wrapper div#elves a img {
+  width: 20%;
+}

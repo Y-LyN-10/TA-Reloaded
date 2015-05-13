@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title Index
+        link(href='gallery.css', rel='stylesheet', type='text/css')
+    body
+        -var img1 = 'http://fc01.deviantart.net/fs71/i/2012/011/6/f/elves_leave_middle_earth_by_araniart-d3aff8y.jpg'
+        -var img2 = 'http://fc09.deviantart.net/fs71/f/2013/200/5/9/elves_by_pearl_of_light-d6e8s3v.png'
+        -var img3 = 'http://3.bp.blogspot.com/-Zci4CGVH6Vc/U0WjzCN55OI/AAAAAAAAgk8/rQgPbxCrTPI/s1600/woodelves.PNG'
+        -var img4 = 'http://fc01.deviantart.net/fs70/f/2012/289/6/c/northern_elves_by_beaver_skin-d5hz3s9.jpg'
+
+        #wrapper
+            #elves
+                a(href='#img1')
+                    img(src=img1)
+                a(href='#img2')
+                    img(src=img2)
+                a(href='#img3')
+                    img(src=img3)
+                a(href='#img4')
+                    img(src=img4)
+                hr
+
+            #preview
+                img#img1(src=img1)
+                img#img2(src=img2)
+                img#img3(src=img3)
+                img#img4(src=img4)
