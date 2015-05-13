@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Times New Roman";
+  font-size: 16px;
+  color: #000;
+}
+li.avenger {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  border-radius: 15px 0 0 0;
+  margin: 0;
+}
+li.avenger .name {
+  font-weight: bold;
+}
+li.avenger .name ~.preview {
+  display: none;
+}
+li.avenger .name:hover ~.avenger {
+  background-color: #ccc !important;
+}
+li.avenger .name:hover {
+  background-color: #ccc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+li.avenger .name:hover ~ ul {
+  border-bottom: 3px solid #fff;
+}
+li.avenger .name:hover ~.preview {
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 2px;
+  background-color: #ccc;
+}
+.avengers {
+  width: 635px;
+  border-bottom: 3px solid #000;
+}
+.preview {
+  width: 628px;
+  height: 270px;
+  border: 3px solid #000;
+}
+.preview img {
+  width: 400px;
+  border: 5px solid #fff;
+  margin: 15px;
+  float: left;
+}
+ul.skills {
+  list-style: none;
+  font-size: 24px;
+  margin: 20px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+li.skill {
+  border: none;
+  display: block;
+  position: relative;
+  align-content: center;
+}
+li.skills:first-child>li:first-of-type {
+  text-decoration: underline;
+}
+li.avenger:hover {
+  background-color: #ccc;
+}
+li.avenger:hover ~ .avengers {
+  border-bottom: 3px solid #fff;
+}
