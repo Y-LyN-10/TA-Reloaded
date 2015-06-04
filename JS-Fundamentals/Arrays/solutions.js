@@ -30,9 +30,9 @@ function lexCompareChars(a, b){
 // Now we can just call maxSequence(elements, type) where type is 'increasing' or 'equal'
 
 function maxSequence(elements, type){
-    var groups  = group(elements, type);
+    var groups = group(elements, type);
     if(type === 'increasing'){
-        groups.filter(group => group.every(isNumber));
+        groups = groups.filter(group => group.every(isNumber));
     }
 
     // Return only the first group with max length
