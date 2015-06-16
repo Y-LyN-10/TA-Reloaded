@@ -9,7 +9,6 @@
 function solve(from, to) {
 	'use strict';
 
-	[from, to].validate(isNumber);
 	return range(from, to).filter(isPrime);
 }
 
@@ -33,6 +32,8 @@ function isPrime(number) {
 // Generate array of consecutive numbers
 // Actually, my fav is that one: http://stackoverflow.com/a/25166457/4483717
 function range(start, count) {
+	[start, count].validate(isNumber);
+
 	start = Number(start);
 	count = Number(count) - start + 1;
 
