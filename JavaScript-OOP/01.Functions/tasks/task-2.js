@@ -9,32 +9,34 @@
 function findPrimesInRange(from, to) {
     'use strict';
 
-    return ([from, to].validate().range().filter(isPrime));
+    return range(from, to).filter(isPrime);
 }
 
 // Generate array of consecutive numbers
-Array.prototype.range = function () {
-    var start = Number(this[0]);
-    var count = Number(this[1]) - start + 1;
+function range(from, to) {
+    if(validNumbers([from, to])){
+        var start = Number(from);
+        var count = Number(to) - start + 1;
 
-    return Array
-        .apply(0, Array(count))
-        .map(function (element, index) {
-            return index + start;
-        });
-};
+        return Array
+            .apply(0, Array(count))
+            .map(function (element, index) {
+                return index + start;
+            });
+    }
+}
 
-Array.prototype.validate = function () {
-    if (this.length < 2 || typeof this === 'undefined') {
+function validNumbers(numbers) {
+    if (numbers.length < 2 || typeof numbers === 'undefined') {
         throw new Error('Some range params are missing (from, to)');
     }
 
-    if (!this.every(isNumber)) {
+    if (!numbers.every(isNumber)) {
         throw new Error('Array contains a non-convertible to Number element');
     }
 
-    return this;
-};
+    return numbers;
+}
 
 function isPrime(number) {
     var start = 2;

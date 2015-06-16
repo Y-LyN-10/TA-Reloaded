@@ -13,7 +13,6 @@ function sum(items) {
 
     return items
             .validateNumbers()
-            .map(Number)
             .reduce(function (a, b) {
                 return a + b;
             }) || null;
@@ -39,7 +38,7 @@ Array.prototype.validateNumbers = function () {
         throw new Error('Array contains a non-convertible to Number element');
     }
 
-    return this;
+    return this.map(Number);
 };
 
 function isNumber(item) {
