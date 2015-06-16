@@ -9,14 +9,7 @@
 function solve(from, to) {
 	'use strict';
 
-	if (!from || !to) {
-		throw new Error('Some range params are missing (from, to)');
-	}
-
-	if (!isNumber(from) || !isNumber(to)) {
-		throw new Error('Array contains a non-convertible to Number element');
-	}
-
+	[from, to].validate(isNumber);
 	return range(from, to).filter(isPrime);
 }
 
@@ -49,6 +42,18 @@ function range(start, count) {
 			return index + start;
 		});
 }
+
+Array.prototype.validate = function(validateWith){
+	if (!this) {
+		throw new Error('Some range params are missing (from, to)');
+	}
+
+	if (!this.every(validateWith)) {
+		throw new Error('Array contains a non-convertible to Number element');
+	}
+
+	return this;
+};
 
 function isNumber(item){
 	return !(isNaN(item) || Number(item).toString() !== item.toString());

@@ -11,32 +11,36 @@
 function sum(items) {
 	'use strict';
 
-	if (!items) {
-		throw new Error('Parameter is not passed');
-	}
-
-	if (items.length < 1) {
-		return null;
-	}
-
-	if (!items.every(isNumber)) {
-		throw new Error('Array contains a non-convertible to Number element');
-	}
-
 	return items
+		.validate(isNumber)
 		.map(Number)
 		.reduce(function (a, b) {
 			return a + b;
-		});
+		}) || null;
 }
-
 
 /**
  * --- ES6 basic solution ---
  *     You can open it in Firefox or with iojs (using --harmony_arrow_functions flag) **/
-// var sum = (n) => n.map(Number).reduce((a, b) => a + b); // <3
+ //var sum = (n) => n.validate(isNumber).map(Number).reduce((a, b) => a + b) || null; // <3
 
 /** --- Helper functions --- **/
+
+Array.prototype.validate = function(validateWith){
+	if (!this) {
+		throw new Error('Parameter is not passed');
+	}
+
+	if (this.length < 1) {
+		return [null];
+	}
+
+	if (!this.every(validateWith)) {
+		throw new Error('Array contains a non-convertible to Number element');
+	}
+
+	return this;
+};
 
 function isNumber(item) {
 	return !(isNaN(item) || Number(item).toString() !== item.toString());
