@@ -19,9 +19,9 @@ function sum(items) {
 }
 
 /**
- * --- ES6 basic solution ---
+ * --- ES6 solution with fat arrow functions ---
  *     You can open it in Firefox or with iojs (using --harmony_arrow_functions flag) **/
-//var sum = (n) => n.validate(isNumber).map(Number).reduce((a, b) => a + b) || null; // <3
+//var sum = (n) => n.validateNumbers().reduce((a, b) => a + b) || null; // <3
 
 /** --- Helper functions --- **/
 

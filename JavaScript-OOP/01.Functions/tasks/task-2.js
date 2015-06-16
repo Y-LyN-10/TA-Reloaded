@@ -14,16 +14,16 @@ function findPrimesInRange(from, to) {
 
 // Generate array of consecutive numbers
 function range(from, to) {
-    if(validNumbers([from, to])){
-        var start = Number(from);
-        var count = Number(to) - start + 1;
+    validNumbers([from, to]);
 
-        return Array
-            .apply(0, Array(count))
-            .map(function (element, index) {
-                return index + start;
-            });
-    }
+    var start = Number(from);
+    var count = Number(to) - start + 1;
+
+    return Array
+        .apply(0, Array(count))
+        .map(function (element, index) {
+            return index + start;
+        });
 }
 
 function validNumbers(numbers) {
@@ -42,8 +42,8 @@ function isPrime(number) {
     var start = 2;
 
     /** Bitwise Hacks:
-     *  So, Math.pow(2, 2) is === 2 << 1
-     *  Then, sqrt should be  === 2 >> 1
+     *  So, Math.pow(4, 2) is ===  4 << 2
+     *  Then, sqrt should be  === 16 >> 2
      * */
 
     while (start <= (number >> 2)) {
@@ -52,7 +52,7 @@ function isPrime(number) {
         }
     }
 
-    return (number > 1 && number !== 4 && number);
+    return number > 1 && number !== 4;
 }
 
 function isNumber(item) {
