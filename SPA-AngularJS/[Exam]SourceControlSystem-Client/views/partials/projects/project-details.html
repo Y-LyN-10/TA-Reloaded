@@ -1,0 +1,99 @@
+﻿<div class="container">
+    <h2> [ID: {{vm.id}}] {{vm.project.Name}}</h2>
+
+    <div class="jumbotron">
+        <strong>Created on: </strong> {{vm.project.CreatedOn | formattedDate}}
+        <br/>
+        <strong>Total users: </strong> {{vm.project.TotalUsers}}
+        <br/>
+        <strong>License: </strong> {{vm.project.License}}
+        <br/>
+
+        <div class="row container">
+            <form name="addUsername">
+                <fieldset class="">
+                    <div class="form-group">
+                        <label for="collaborator" class="col-lg-2 control-label"></label>
+                        <div class="col-md-5">
+                            <input class="form-control small"
+                                   ng-model="username"
+                                   placeholder="username@mail.com"
+                                   required="required"
+                                   id="collaborator" />
+                        </div>
+                        <div class="col-md-2">
+                            <button ng-click="vm.addCollaborator(username)" ng-disabled="addUsername.$invalid" class="btn btn-primary">
+                                Add collaborator
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <br/>
+
+
+            <div class="col-md-3 col-md-offset-6">
+                <div class="col-md-3">
+                    <button class="btn btn-primary" ng-click="vm.prevPage()">&lt;&lt;</button>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" ng-model="vm.request.page" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary" ng-click="vm.nextPage()">&gt;&gt;</button>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-primary text-center">
+                    <div class="panel-heading">Collaborators</div>
+
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="list-group-item" ng-repeat="email in vm.collaborators">{{email}}</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel panel-footer">
+                        <span>Total: {{vm.collaborators.length}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-primary text-center">
+                    <div class="panel-heading">Commits</div>
+                    <div all-commits></div>
+                    <div class="panel panel-footer">
+                        <span>Total: {{vm.commits.length}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form name="addCommitForm" class=""></form>
+            <fieldset class="">
+                <div class="form-group">
+                    <label for="source" class="col-lg-2 control-label">Source code</label>
+                    <div class="col-lg-10">
+                        <textarea type="input"
+                                  class="form-control"
+                                  required="required"
+                                  ng-model="commit.sourceCode"
+                                  id="source" >
+                        </textarea>
+                    </div>
+
+                    <button type="submit" ng-click="vm.addCommit(commit)" ng-disabled="addCommitForm.$invalid" class="btn btn-primary">
+                        Add commit
+                    </button>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

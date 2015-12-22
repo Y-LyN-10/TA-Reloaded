@@ -1,0 +1,62 @@
+﻿<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Source Control System</h1>
+        <br/>
+        <pre class="blockquote-reverse">"There are two types of software : bad software and the next release"</pre>
+    </div>
+
+    <div class="row jumbotron">
+        <div class="col-md-4 text-center">
+            <div>
+                <strong>Projects</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Projects}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <div>
+                <strong>Commits</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Commits}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <div>
+                <strong>Users</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.Users}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest Projects</h3>
+                    <!-- TODO: show only public ones - filter by access rights -->
+                </div>
+                <div class="panel-body">
+                    <div all-projects />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest Commits</h3>
+                    <!-- TODO: show only public ones - filter by access rights -->
+                </div>
+                <div class="panel-body">
+                    <div all-commits />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

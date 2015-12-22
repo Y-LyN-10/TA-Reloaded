@@ -1,0 +1,65 @@
+﻿<div class="container">
+    <div class="well">
+        <form name="createProjectForm" class="form-horizontal">
+            <fieldset>
+                <legend>Create New Project</legend>
+                <div class="form-group">
+                    <label for="from-name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                        <input class="form-control"
+                               ng-model="project.name"
+                               required="required"
+                               id="from-name" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="col-lg-2 control-label">Description</label>
+                    <div class="col-lg-10">
+                        <textarea type="input"
+                                class="form-control"
+                                required="required"
+                                ng-model="project.description"
+                                id="description" >
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="license" class="col-lg-2 control-label">License</label>
+                    <div class="col-lg-10">
+                        <select class="form-control"
+                                ng-init="project.license=1"
+                                required="required"
+                                ng-model="project.licenseid"
+                                id="license">
+                            <option ng-repeat="license in vm.licenses" value="{{license.Id}}">
+                                {{license.Name}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="private" class="col-lg-2 control-label">Private</label>
+                    <div class="col-lg-10">
+                        <input
+                                style="width: 20px"
+                                type="checkbox"
+                                class="form-control checkbox"
+                                ng-model="project.isPrivate"
+                                id="private">
+                        </input>
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <button ng-click="vm.createProject(project)" ng-disabled="createProjectForm.$invalid" class="btn btn-primary">
+                        Create
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
