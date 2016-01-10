@@ -12,12 +12,8 @@ function init() {
             console.log('MongoDB connection error' + err);
             process.exit(0);
         }
-    });
 
-    db.on('connect', function (err) {
-        if(!err){
-            console.log('[LOG] - Successfully connected to the database');
-        }
+        console.log('[LOG] - Successfully connected to the database');
     });
 
     db.on('error', function(err){
