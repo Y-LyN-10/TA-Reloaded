@@ -2,7 +2,7 @@
   "name": "mongoose-chat",
   "version": "1.0.0",
   "description": "homework 2",
-  "main": "use.example.js",
+  "main": "chat-example.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
