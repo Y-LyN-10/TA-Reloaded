@@ -17,6 +17,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
     "hapi": "^12.1.0",
     "jade": "^1.11.0",
     "vision": "^4.0.1"
