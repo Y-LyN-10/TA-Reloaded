@@ -1,2 +1,10 @@
+### Webstorm
 .idea/
+
+### NPM
 node_modules/
+
+### Emacs
+.tern-port
+*~
+#
