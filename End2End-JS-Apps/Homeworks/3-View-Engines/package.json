@@ -1,0 +1,24 @@
+{
+  "name": "hapi-jade-template",
+  "version": "1.0.0",
+  "description": "homework 3 for the end-to-end js apps course at Telerik Academy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hapi",
+    "jade",
+    "server",
+    "routes",
+    "views",
+    "engine"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^12.1.0",
+    "jade": "^1.11.0",
+    "vision": "^4.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+doctype html
+html(ng-app="app")
+  head
+    meta(charset='utf-8')
+    title #{title}
+    link(rel='stylesheet', href='app.css')
+    
+  body
+    include partials/header
+
+    block content
+    
+    include partials/footer
